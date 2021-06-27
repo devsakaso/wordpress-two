@@ -1,0 +1,2 @@
+body{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;-ms-flex-direction:column;flex-direction:column;min-height:100vh}h1{color:#face7c;background-color:#b77cbd}.title{color:#bc8f8f;font-size:50px;filter:blur(1px);position:sticky;transition:all .3s;-ms-transform:translate(20px);transform:translate(20px)}.title.active{color:#eee8aa}
+/*# sourceMappingURL=main.css.map */
