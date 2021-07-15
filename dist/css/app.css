@@ -1,0 +1,9 @@
+body {
+  background-color: teal;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../images/2.jpg");
+}
