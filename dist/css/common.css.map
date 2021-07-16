@@ -1,0 +1,1 @@
+{"version":3,"sources":["common.scss","common.css"],"names":[],"mappings":"AAAA,MACE,UAAA,CCCF,ADCE,UACE,SAAA,CCCJ","file":"common.css","sourcesContent":[".text {\n  color: blue;\n\n  &.dev {\n    color: red;\n  }\n}",".text {\n  color: blue;\n}\n.text.dev {\n  color: red;\n}"]}
