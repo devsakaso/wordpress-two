@@ -38,11 +38,7 @@ filesPath = {
 function sassTask() {
   return (
     gulp
-<<<<<<< HEAD
       .src(filesPath.sass)
-=======
-      .src([filesPath.sass, '!./src/sass/not-compile.scss'])
->>>>>>> repo/master
       .pipe(plumber()) // errorによる監視のストップ防止
       // .pipe(plumber({errorHandler: notifier.error})) // error handling
       .pipe(sourcemaps.init()) //sourcemaps starts
