@@ -1,0 +1,1 @@
+{"version":3,"sources":["not-compile.scss","not-compile.css"],"names":[],"mappings":"AAAA,GACE,UAAA,CCCF","file":"not-compile.css","sourcesContent":["h2 {\n  color: pink;\n}","h2 {\n  color: pink;\n}"]}
