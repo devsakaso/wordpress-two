@@ -7,7 +7,7 @@ mix
   processCssUrls: false,
 })
 .js('src/js/app.js', 'dist/js')
-.sass('src/scss/app.scss', 'dist/css')
+.sass('src/sass/app.scss', 'dist/css')
 .copyDirectory('src/images', 'dist/images')
 mix.browserSync({
   files: [

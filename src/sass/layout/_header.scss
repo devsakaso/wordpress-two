@@ -1,0 +1,21 @@
+.header {
+  background: rgba($color-primary, 0.2);
+  color: black;
+  padding: 20px 10px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav {
+  & .container {
+    width: 100%;
+  }
+  & ul {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba($color-primary, 0.2);
+  }
+}
+

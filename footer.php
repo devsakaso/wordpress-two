@@ -1,4 +1,11 @@
-<?php wp_footer(); ?>
+    <footer>
+      <div class="container">
+        <!-- TODO: 日付がでない -->
+        <p>&copy; <?php the_time('Y'); ?> - <?php bloginfo(); ?></p>
+      </div>
+    </footer>
 
-</body>
+    <?php wp_footer(); ?>
+
+  </body>
 </html>
