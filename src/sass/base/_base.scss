@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  scroll-behavior: smooth;
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 60%;
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 59%;
+  }
+
+  @include respond(big-desktop) {
+    // font-size: 65%;
+  }
+}
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  font-size: 1.6rem;
+}
+.wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1; //wrapperを1で設定
+}
+
+section {
+  background-color: $color-section-bg;
+  position: relative;
+  // content-visibility: auto;
+  // contain-intrinsic-size: 500px;
+}
+
+// ::selection {
+//     background-color: $color-primary;
+//     color: $color-white;
+// }
+
+
+// additionl
