@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
@@ -18,30 +17,3 @@
 
 @import "pages/post";
 
-
-=======
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-h1 {
-  color: rgb(250, 206, 124);
-  background-color: #b77cbd;
-}
-.title {
-  color: rosybrown;
-  font-size: 50px;
-  filter: blur(1px);
-  position: sticky;
-  transition: all .3s;
-  transform: translate(20px);
-
-  &.active {
-    color: palegoldenrod;
-  }
-}
->>>>>>> repo/master

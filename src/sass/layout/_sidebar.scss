@@ -1,0 +1,12 @@
+.sidebar {
+  @include respond(tab-land) {
+    margin-left: 2rem;
+    flex-basis: 33rem;
+  }
+
+  &__title {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $color-grey-dark-3;
+  }
+}

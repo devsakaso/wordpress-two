@@ -11,14 +11,14 @@ html {
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
   scroll-behavior: smooth;
 
-  @include respond(tab-land) {
-    // width < 1200?
-    font-size: 60%;
-  }
-
   @include respond(tab-port) {
     // width < 900?
     font-size: 59%;
+  }
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 60%;
   }
 
   @include respond(big-desktop) {
@@ -33,18 +33,24 @@ a:focus {
   outline: none;
 }
 
-ul {
+ul,
+li {
   list-style: none;
+}
+
+input,
+textarea {
+  outline: none;
 }
 
 body {
   box-sizing: border-box;
   position: relative;
-  font-size: 1.6rem;
+  font-size: $default-font-size;
 }
 .wrapper {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   z-index: 1; //wrapperを1で設定
 }
@@ -61,5 +67,29 @@ section {
 //     color: $color-white;
 // }
 
+// ADDITIONAL
 
-// additionl
+body {
+  font-family: Arial;
+  color: $color-grey-dark-1;
+}
+
+a {
+  color: $color-primary;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $color-primary-light;
+  }
+}
+
+.container {
+  width: $container-w-phone;
+  margin: auto;
+  @include respond(tab-port) {
+    width: $container-w-tab-port;
+  }
+  @include respond(tab-land) {
+    width: $container-w-tab-land;
+  }
+}
