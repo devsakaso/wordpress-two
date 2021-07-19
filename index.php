@@ -18,7 +18,7 @@
       </div>
     </main>
     <div class="sidebar">
-      <div class="u-block">
+      <!-- <div class="u-block">
         <h3 class="sidebar__title">サイドバー</h3>
         <p class="sidebar__p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
@@ -27,7 +27,10 @@
           repellendus incidunt in dolores soluta mollitia. Nulla!
         </p>
         <a href="" class="button">詳しくみる</a>
-      </div>
+      </div> -->
+      <?php if(is_active_sidebar('sidebar')) : ?>
+        <?php dynamic_sidebar('sidebar'); ?>
+      <?php endif; ?>
     </div>
   </div>
 </div>

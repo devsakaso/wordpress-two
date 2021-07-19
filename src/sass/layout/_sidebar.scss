@@ -1,12 +1,23 @@
 .sidebar {
   @include respond(tab-land) {
     margin-left: 2rem;
-    max-width: 33rem;
+    min-width: 33rem;
   }
 
   &__title {
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid $color-grey-dark-3;
+  }
+
+  & ul li {
+    & a {
+      padding: 2rem 1rem;
+      font-size: 2rem;
+      line-height: 3;
+    }
+    & .post-date {
+      font-size: 1.3rem;
+    }
   }
 }

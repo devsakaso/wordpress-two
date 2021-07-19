@@ -75,3 +75,54 @@ function page_is_parent() {
   $pages = get_pages('child_of=' . $post->ID);
   return count($pages);
 }
+
+// Widgets
+function init_widgets($id) {
+  // サイドバー
+  register_sidebar(array(
+    'name' => 'サイドバー',
+    'id' => 'sidebar',
+    'before_widget' => '<div class="u-block widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="sidebar__title">',
+    'after_title' => '</h3>'
+  ));
+  // ショウケースエリア
+  register_sidebar(array(
+    'name' => 'ショウケースエリア',
+    'id' => 'showcase',
+    'before_widget' => '<div class="u-block showcase">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="sidebar__title">',
+    'after_title' => '</h3>'
+  ));
+  // Box 1
+  register_sidebar(array(
+    'name' => 'Box 1',
+    'id' => 'box1',
+    'before_widget' => '<div class="u-block box box1">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="sidebar__title">',
+    'after_title' => '</h3>'
+  ));
+  // Box 2
+  register_sidebar(array(
+    'name' => 'Box 2',
+    'id' => 'box2',
+    'before_widget' => '<div class="u-block box box2">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="sidebar__title">',
+    'after_title' => '</h3>'
+  ));
+  // Box 3
+  register_sidebar(array(
+    'name' => 'Box 3',
+    'id' => 'box3',
+    'before_widget' => '<div class="u-block box box3">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="sidebar__title">',
+    'after_title' => '</h3>'
+  ));
+
+}
+add_action('widgets_init', 'init_widgets');
