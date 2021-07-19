@@ -1,0 +1,39 @@
+.widget {
+  &__showcase {
+    margin-top: 6rem;
+    text-align: center;
+    background-color: $color-secondary;
+
+    &-title {
+      margin: 3rem 0;
+      font-size: 3rem;
+    }
+  }
+
+  &__box {
+    max-width: 100%;
+
+    @include respond(tab-port) {
+      max-width: 33%;
+    }
+    @include respond(tab-land) {
+      max-width: 37rem;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include respond(tab-port) {
+        flex-direction: row;
+      }
+    }
+    &-title {
+      text-align: center;
+      background: $color-secondary;
+      border-radius: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

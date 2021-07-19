@@ -1,15 +1,12 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "base/animations";
 @import "base/base";
-@import "base/typography";
 @import "base/utilities";
 
 @import "components/button";
-@import "components/input";
-@import "components/sns";
-@import "components/swiper";
+@import "components/box";
+@import "components/widget";
 
 @import "layout/sidebar";
 @import "layout/header";

@@ -91,36 +91,36 @@ function init_widgets($id) {
   register_sidebar(array(
     'name' => 'ショウケースエリア',
     'id' => 'showcase',
-    'before_widget' => '<div class="u-block showcase">',
+    'before_widget' => '<div class="u-block widget__showcase">',
     'after_widget' => '</div>',
-    'before_title' => '<h3 class="sidebar__title">',
+    'before_title' => '<h3 class="widget__showcase-title">',
     'after_title' => '</h3>'
   ));
   // Box 1
   register_sidebar(array(
     'name' => 'Box 1',
     'id' => 'box1',
-    'before_widget' => '<div class="u-block box box1">',
+    'before_widget' => '<div class="u-block widget__box widget__box-1">',
     'after_widget' => '</div>',
-    'before_title' => '<h3 class="sidebar__title">',
+    'before_title' => '<h3 class="widget__box-title">',
     'after_title' => '</h3>'
   ));
   // Box 2
   register_sidebar(array(
     'name' => 'Box 2',
     'id' => 'box2',
-    'before_widget' => '<div class="u-block box box2">',
+    'before_widget' => '<div class="u-block widget__box widget__box-2">',
     'after_widget' => '</div>',
-    'before_title' => '<h3 class="sidebar__title">',
+    'before_title' => '<h3 class="widget__box-title">',
     'after_title' => '</h3>'
   ));
   // Box 3
   register_sidebar(array(
     'name' => 'Box 3',
     'id' => 'box3',
-    'before_widget' => '<div class="u-block box box3">',
+    'before_widget' => '<div class="u-block widget__box widget__box-3">',
     'after_widget' => '</div>',
-    'before_title' => '<h3 class="sidebar__title">',
+    'before_title' => '<h3 class="widget__box-title">',
     'after_title' => '</h3>'
   ));
 

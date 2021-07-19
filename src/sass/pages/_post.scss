@@ -26,14 +26,7 @@
   &__thumbnail {
     height: auto;
     max-width: 40rem;
-    // width: $container-w-phone;
     margin: auto;
-    // @include respond(tab-port) {
-    //   width: $container-w-tab-port;
-    // }
-    // @include respond(tab-land) {
-    //   width: $container-w-tab-land;
-    // }
 
     & > img {
       width: 100%;
