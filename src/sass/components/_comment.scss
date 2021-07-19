@@ -1,0 +1,57 @@
+.comment {
+  &-body {
+    border: #ccc 1px solid;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+  }
+
+  &-meta {
+    background: $color-grey-dark-1;
+    color: #fff;
+    padding: 10px;
+    overflow: auto;
+  }
+
+  &-meta img {
+    float: left;
+    margin-right: 10px;
+  }
+
+  &-meta time {
+    margin-left: 12px;
+  }
+
+  &-reply-link {
+    background: $color-primary;
+    color: $color-white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid $color-primary;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-primary;
+    }
+  }
+
+  &-form input,
+  &-form textarea {
+    width: 100%;
+    border: #ccc 1px solid;
+    margin-bottom: 2rem;
+  }
+
+  &-form input {
+    background-color: $color-primary;
+    color: $color-white;
+    border: 1px solid $color-primary;
+    border-radius: 2rem;
+    padding: 2rem 1rem;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $color-white;
+      color: $color-primary;
+    }
+  }
+}

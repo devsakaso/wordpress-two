@@ -12,6 +12,7 @@
           <?php else : ?>
             <?php echo apautop('記事がありません。'); ?>
           <?php endif; ?>
+          <?php comments_template(); ?>
         </div>
       </div>
     </main>
