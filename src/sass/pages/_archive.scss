@@ -1,0 +1,15 @@
+.archive {
+
+  &__container {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgba($color-primary, 0.8);
+  }
+
+  &__title {
+    padding: 2rem 0;
+  }
+  &__p {
+    padding: 0 2rem;
+
+  }
+}

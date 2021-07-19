@@ -1,3 +1,9 @@
+<?php
+/*
+  Template Name: 会社電話表示
+*/
+?>
+
 <?php get_header(); ?>
 
 <div class="container">
@@ -7,9 +13,11 @@
         <div class="u-block">
           <?php if(have_posts()) : ?>
             <?php while(have_posts()) : the_post(); ?>
-              <!-- articleがあった部分 -->
-              <!-- get_template_partのsecond argはformat(asideとかgalleryとか) -->
-              <?php get_template_part('content', get_post_format()); ?>
+              <article class="page">
+                <h2 class="page__title"><?php the_title(); ?></h2>
+                <p class="u-phone">TEL: 090-9999-9999</p>
+                <?php the_content(); ?>
+              </article>
             <?php endwhile; ?>
           <?php else : ?>
             <?php echo wpautop('記事がありません。'); ?>
