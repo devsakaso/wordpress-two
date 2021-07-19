@@ -1,70 +1,19 @@
 .post {
-  max-width: 100%;
-  margin-bottom: 6rem;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid rgba($color-primary, 0.8);
-  &__title {
-    margin-bottom: 2rem;
-  }
-  &__meta {
-    margin-bottom: 2rem;
-    background: rgba($color-primary, 0.8);
-    color: $color-white;
-    border-radius: 2rem;
-    padding: 1rem 2rem;
+  border-bottom: 1px #ccc solid;
+  overflow: hidden;
 
-    & a {
-      color: $color-white;
-      &:hover {
-        color: rgba($color-secondary, 0.8);
-      }
-    }
+  & a.button {
+    display: inline-block;
+    background-color: #eee;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
   }
-  &__p {
-    margin-bottom: 1rem;
-  }
+
   &__thumbnail {
-    height: auto;
-    max-width: 40rem;
-    // width: $container-w-phone;
-    margin: auto;
-    // @include respond(tab-port) {
-    //   width: $container-w-tab-port;
-    // }
-    // @include respond(tab-land) {
-    //   width: $container-w-tab-land;
-    // }
-
-    & > img {
+    & img {
       width: 100%;
       height: auto;
-      display: block;
-      object-fit: cover;
-    }
-  }
-  // content-aside.php
-  &__content {
-    &-aside {
-      background: rgba($color-secondary, 0.8);
-      padding: 2rem 1rem;
-      border-radius: 2rem;
-      & small {
-        font-weight: bold;
-      }
-    }
-    &-link {
-      background: rgba($color-grey-light-1, 0.8);
-      padding: 2rem 1rem;
-      border-radius: 2rem;
-    }
-    &-gallery {
-      background:rgba($color-grey-light-2, 0.8);
-      padding: 2rem 1rem;
-      border-radius: 2rem;
-      & img {
-        width: 100%;
-        height: auto;
-      }
     }
   }
 }

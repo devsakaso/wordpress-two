@@ -11,14 +11,18 @@ html {
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
   scroll-behavior: smooth;
 
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 60%;
+  }
+
   @include respond(tab-port) {
     // width < 900?
     font-size: 59%;
   }
 
-  @include respond(tab-land) {
-    // width < 1200?
-    font-size: 60%;
+  @include respond(big-desktop) {
+    // font-size: 65%;
   }
 }
 a,
@@ -29,24 +33,18 @@ a:focus {
   outline: none;
 }
 
-ul,
-li {
+ul {
   list-style: none;
-}
-
-input,
-textarea {
-  outline: none;
 }
 
 body {
   box-sizing: border-box;
   position: relative;
-  font-size: $default-font-size;
+  font-size: 1.6rem;
 }
 .wrapper {
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   z-index: 1; //wrapperを1で設定
 }
@@ -54,6 +52,8 @@ body {
 section {
   background-color: $color-section-bg;
   position: relative;
+  // content-visibility: auto;
+  // contain-intrinsic-size: 500px;
 }
 
 // ::selection {
@@ -61,31 +61,62 @@ section {
 //     color: $color-white;
 // }
 
-// ADDITIONAL
+
+// additionl
+html,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
 
 body {
-  // font-family: Arial;
-  color: $color-grey-dark-1;
-  line-height: 1.8;
+  color: $color-white;
+  box-sizing: border-box;
+  color: black;
+  min-height: 100%;
+  background-image: url("../images/2.jpg");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
 }
 
 a {
   color: $color-primary;
-  transition: all 0.3s;
-
+  text-decoration: none;
   &:hover {
     color: $color-primary-light;
   }
 }
+ul,li {
+  list-style: none;
+}
 
-.container {
-  width: $container-w-phone;
-  margin: auto;
-  @include respond(tab-port) {
-    width: $container-w-tab-port;
-  }
-  @include respond(tab-land) {
-    width: $container-w-tab-land;
+.wrapper {
+  display: flex;
+}
+
+.main {
+  margin: 20px auto;
+  min-height: 70vh;
+}
+
+.content {
+  color: blue;
+  font-weight: bold;
+
+  & > a {
+    text-decoration: none;
+    color: $color-white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem 1rem;
+    border-radius: 40px;
   }
 }
 
+.container {
+  width: 1020px;
+  margin: 0 auto;
+  overflow: auto;
+}

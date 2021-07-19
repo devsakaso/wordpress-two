@@ -1,29 +1,6 @@
-.footer {
-  background: $color-grey-dark-2;
-  padding: 3rem 0;
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    @include respond(phone) {
-      flex-direction: row;
-    }
-  }
-
-  &__nav {
-    &-list {
-      display: flex;
-    }
-    &-link {
-      padding: 1rem 2rem;
-      display: inline-block;
-      color: $color-white;
-    }
-  }
-  &__copy {
-    padding: 1rem 2rem;
-
-    color: $color-white;
-  }
+footer {
+  background: rgba($color-primary, 0.2);
+  color: black;
+  padding: 20px 10px;
+  text-align: center;
 }

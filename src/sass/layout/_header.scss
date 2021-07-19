@@ -1,67 +1,21 @@
 .header {
-  background: $color-grey-dark-2;
-  padding: 3rem 0;
-  border-bottom: 3px solid $color-grey-dark-3;
+  background: rgba($color-primary, 0.2);
+  color: black;
+  padding: 20px 10px;
+}
 
-  &__title {
-    color: $color-primary;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include respond(tab-port) {
-      flex-direction: row;
-    }
-  }
-  &__link {
-    @include respond(tab-port) {
-      margin-right: 2rem;
-    }
-  }
-
-  & small {
-    color: $color-grey-light-1;
-    font-size: 1.3rem;
-    margin: 2rem;
-  }
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    @include respond(tab-port) {
-      flex-direction: row;
-    }
-  }
-  &__input {
-    width: 25rem;
-    padding: 1rem;
-    border-radius: 2rem;
-  }
+.header h1 {
+  margin: 0;
 }
 
 .nav {
-  height: 5rem;
-  width: 100%;
-  background-color: $color-grey-dark-2;
-
-  &__list {
-    display: flex;
-    // align-content: center;
-    height: 5rem;
-    line-height: 5rem;
-  }
-
-  &__link {
-    color: $color-white;
-    padding: 0 2rem;
-    height: 100%;
+  & .container {
     width: 100%;
-    display: block;
-    transition: background 0.3s;
-
-    &:hover {
-      background: $color-primary;
-      color: $color-white;
-    }
+  }
+  & ul {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba($color-primary, 0.2);
   }
 }
+

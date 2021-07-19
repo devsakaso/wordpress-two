@@ -1,12 +1,20 @@
 .sidebar {
-  @include respond(tab-land) {
-    margin-left: 2rem;
-    max-width: 33rem;
+  flex-basis: 330px;
+  min-height: 70vh;
+  background: rgba($color-primary, 0.2);
+  padding: 2rem;
+}
+.widget {
+  &_recent_entries {
+    & ul li {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+    }
   }
-
-  &__title {
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid $color-grey-dark-3;
+  &_categories {
+    & .widgettitle {
+      color: color-primary !important;
+    }
   }
 }
